@@ -213,3 +213,4 @@ textfile_2025-02-15_15-00.txt
 ✔ Created a cron job to run at 3:00 PM daily
 ✔ Verified backups with logs
 ✔ Added timestamped backups
+چالش ها: اول ارتباط ssh بین دو ماشین که پیچیده بود کمی ولی شد. دومی دادن دسترسی کامل به یوزر vagrant بای اینکه بتواند فایل تکست را کپی کند.
