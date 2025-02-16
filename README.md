@@ -167,12 +167,12 @@ Scroll to the bottom and add:
 3️⃣ Save and Exit
 
 In nano, press CTRL + X, then Y, then ENTER.
-🔹 Step 4: Verify the Cron Job
+### 🔹 Step 4: Verify the Cron Job
 
     Check if the cron job is scheduled:
-
+```
 crontab -l
-
+```
 You should see:
 
 0 15 * * * scp /path/to/textfile.txt vagrant@192.168.56.102:/backup/ >> /home/vagrant/backup.log 2>&1
@@ -204,9 +204,9 @@ To keep multiple backups, modify the cron job:
 0 15 * * * scp /path/to/textfile.txt vagrant@192.168.56.102:/backup/textfile_$(date +\%Y-\%m-\%d_\%H-\%M).txt
 ```
 Now, backups will be stored as:
-
+```
 textfile_2025-02-15_15-00.txt
-
+```
 ✅ Summary
 
 ✔ Configured SSH & SCP for file transfer
