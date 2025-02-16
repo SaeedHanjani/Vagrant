@@ -158,9 +158,9 @@ If it's your first time, choose a text editor (select nano if unsure).
 ### 2️⃣ Add This Cron Job
 
 Scroll to the bottom and add:
-
+```
 0 15 * * * scp /path/to/textfile.txt vagrant@192.168.56.102:/backup/ >> /home/vagrant/backup.log 2>&1
-
+```
     0 15 * * * → Runs every day at 3:00 PM.
     Redirects output to a log file (backup.log).
 
